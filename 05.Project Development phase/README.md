@@ -1,61 +1,90 @@
 # OptiCrop – Smart Agricultural Production
 
 ## Project Overview
-OptiCrop is a Machine Learning-based crop recommendation system that helps farmers select the most suitable crop based on soil nutrients and environmental conditions. The system predicts the best crop using user inputs and provides quick, accurate recommendations through a simple web interface.
+
+OptiCrop is a Machine Learning-based Smart Agricultural Production System that recommends the most suitable crop based on soil nutrients and environmental conditions. The project includes data analysis, machine learning model development, documentation, and a Flask-based web application.
+
+## Features
+
+- Crop Recommendation using Machine Learning
+- Data Preprocessing and Analysis
+- Interactive Flask Web Application
+- User-Friendly Interface
+- Fast and Accurate Predictions
+- Deployment on Render
 
 ## Input Parameters
-The model uses the following inputs:
 
 - Nitrogen (N)
 - Phosphorus (P)
 - Potassium (K)
-- Temperature (°C)
-- Humidity (%)
+- Temperature
+- Humidity
 - pH Value
-- Rainfall (mm)
+- Rainfall
 
 ## Technologies Used
 
 - Python
-- Pandas
-- NumPy
-- Scikit-Learn
 - Flask
 - HTML
 - CSS
-- Machine Learning
+- Pandas
+- NumPy
+- Scikit-Learn
+- Jupyter Notebook
+- Render
 
 ## Machine Learning Model
 
 **Model Used:**
 - Random Forest Classifier
 
-**Performance Metrics:**
-- Accuracy: (Add your model accuracy)
-- Precision: (Add value)
-- Recall: (Add value)
-- F1-Score: (Add value)
-
-## Project Structure
+## Repository Structure
 
 ```
-Dataset/
-OptiCrop_Website/
-crop_Recommendation.ipynb
-Crop_recommendation.csv
-README.md
+OPTICROP-2/
+│
+├── 05.Project Development phase/
+│   ├── OptiCrop_Website/
+│   ├── Crop_recommendation.csv
+│   ├── crop_Recommendation.ipynb
+│   ├── coding&Solutions.pdf
+│   ├── codeLayout,Readability and Reusability.pdf
+│   └── No. of Functional Features Included.pdf
+│
+└── README.md
 ```
 
-## Features
+## Run the Website
 
-- Crop Recommendation
-- User-Friendly Web Interface
-- Fast and Accurate Predictions
-- Soil Parameter Analysis
-- Machine Learning-Based Decision Support
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+Open:
+
+```
+http://127.0.0.1:5000
+```
+
+## Deployment
+
+Build Command:
+
+```bash
+pip install -r requirements.txt
+```
+
+Start Command:
+
+```bash
+gunicorn wsgi:app
+```
 
 ## Authors
 
-- Abdul Rasool sk
+- Abdul Rasool
 - Tanuboddi Siva Sai Sri Sachin Reddy
-- Lasya manda
+- Lasya
