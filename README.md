@@ -39,7 +39,9 @@ OptiCrop is a machine learning-based web application that recommends the most su
 ## Developed By
 
 - Abdul Rasool Shaik
+  
 -Sachin tanuboddi
+
 -Lasya manda
 
 
